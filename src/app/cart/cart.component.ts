@@ -8,8 +8,8 @@ import { CartService } from "../cart.service";
   styleUrls: ["./cart.component.css"]
 })
 export class CartComponent implements OnInit {
-  items;
-  checkoutForm;
+  items: Array<any> = [];
+  checkoutForm: any;
 
   constructor(
     private cartService: CartService,
@@ -25,7 +25,7 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
   }
 
-  onSubmit(customerData) {
+  onSubmit(customerData: any) {
     // process
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();

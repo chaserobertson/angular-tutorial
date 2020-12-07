@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-tutorial-36dcf"
+  },
+  "targets": {
+    "angular-tutorial-36dcf": {
+      "hosting": {
+        "angular-tutorial": [
+          "angular-tutorial-36dcf"
+        ]
+      }
+    }
+  }
+}
